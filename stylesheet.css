@@ -1,0 +1,489 @@
+/*  Style Sheet für Norwegen-Website  */
+/* Toggle comment: Shift + cmd + M */
+/*Farbschema
+ * Schwarz:      #000
+ * Weiß         #fff
+ * Grau:         #cdcdcd
+ * Dunkelblau:   #3d6baa 
+ * Hellblau:     #74acf7
+*/
+
+body {
+    margin: 0px;
+    font-family: "Avenir Next", Verdana, sans-serif;
+    background-color: #cdcdcd;
+}
+
+header {
+    position: sticky;
+    background-color: #000;
+}
+
+nav .clearFloat {
+    clear: both;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    position: sticky;
+    /*	top: 0;*/
+    /*	left: 0;*/
+    /*	right: 0;*/
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin-right: 1em;
+    /*    border: none;*/
+    background-color: transparent;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0em;
+    /*    border: none;*/
+    background-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2;
+    color: #ddd;
+    background-color: transparent;
+    padding: 1em;
+    margin: 0;
+}
+
+/*
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+*/
+nav a:focus,
+nav a:hover,
+nav a:active {
+    color: #74acf7;
+}
+
+
+/* Teaser - erste Version */
+/*
+figure.teaser {
+    display: block;
+    margin: 0em;
+}
+
+.teaser img {
+    width: 100%;
+    height: auto;
+}
+
+/\* Headline styles *\/
+.teaserCaption h1 {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: white;
+    font-size: 4em;
+}*/
+
+
+/* Flexbox */
+/*
+ *flex-grow: 0 (Items dürfen nicht größer werden als festgelegt)
+ *flex-shrink: 1 (Items dürfen kleiner werden als festgelegt)
+ *flex-basis: auto (Die Basis-Größe der Items wird automatisch festgelegt 
+ *           – also anhand der Angaben height, width bzw. auf Grundlage des enthaltenen Inhalts)
+ *flex: 0 1 a (Kurzform der drei Attribute)
+ *order: 0 (Die Reihenfolge entspricht der des HTML-Codes, sonst: 1, 2, 3, usw.) 
+*/
+
+
+/*Browser Kompabilität
+ *Firefox und Chromium-basierte Browser: voll kompatibel
+ *Safari: versions 9 and up support the current flexbox spec without prefixes. 
+ *Older Safari versions require -webkit- prefixes.
+ *Sometimes min-width and max-width cause alignment problems which can be resolved 
+ *with flex equivalents.
+*/
+
+.teaserContainer {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*    background-color: orange;*/
+    /*    justify-content: center; /\* vertikale Zentrierung *\/*/
+}
+
+.teaserItem {
+    /*    background-color: orange;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;             /*  wachsen, schrumpfen, min-Breite */
+    /*    flex-direction: column; /\* flexible Höhe der Textspalte *\/*/
+    /*    justify-content: center;   /\* vertikale Zentrierung *\/*/
+    max-width: 30px;
+    /*    padding: 2em;*/
+    /*    margin: 1em;*/
+}
+
+/* soll die h1 umbrechen lassen, funktioniert aber nicht*/
+.teaserItem > h1 {
+    flex: 0 1 auto;                 /*  wachsen, schrumpfen, min-Breite */
+}
+
+.teaserHome {
+    background-image: url("./pics/teaserWide.jpg");
+}
+
+.teaserCabin {
+    background-image: url("./pics/CabinWinter.jpg");
+}
+
+.teaserNatur {
+    background-image: url("./pics/Trolltunga.jpg");
+}
+
+
+
+.introContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;        /* vertikale Zentrierung */
+    align-items: center;            /* horizontale Zentrierung */
+    /*    background-color: grey; */
+}
+
+.introItem {
+    /*    background-color: orange;*/
+    display: flex;
+    flex: 0 1 auto;                 /*  wachsen, schrumpfen, min-Breite */
+    flex-direction: column;         /* damit der Text nicht in Spalten verläuft */
+    /*    justify-content: center;*/
+    max-width: 600px;
+    padding: 2em;
+    /*    margin: 1em;*/
+}
+
+.linkList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;        /* vertikale Zentrierung */
+    align-items: center;            /* horizontale Zentrierung */
+    /*  background-color: grey;  */
+    padding: 0;
+
+}
+
+.linkItem {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    flex: 1 1 45%;                 /*  wachsen, schrumpfen, Breite viewport */
+    height: 45vw;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.linkItem > a {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    text-decoration: none;
+}
+
+.linkItem > a > h2 {
+    font-size: 3em;
+    color: #000;
+    margin: 0;
+}
+
+.linkItem > a:hover, 
+.linkItem > a > h2:hover {
+    color: #3d6baa;
+}
+
+.huette {
+    background-image: url("./pics/Attic.jpg");
+}
+
+.natur {
+    background-image: url("./pics/NaturGras.jpg");
+}
+
+.kultur {
+    background-image: url("./pics/Tee.jpg");
+}
+
+.projekte {
+    background-image: url("./pics/handspun.jpg");
+}
+
+/*---------------*/
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;        /*Objekte horizontal zentriert */
+}
+
+.picItem {
+    /*    background-color: lime;*/
+ /*   display: flex;
+    flex: 0 1 auto;                 /\*  wachsen, schrumpfen, min-Breite *\/
+    flex-direction: column;
+    width: 300px;*/
+    padding: 1em;
+}
+
+/*Klasse projectIMGsize musste für Safari-Browser eingerichtet werden, 
+ * damit das Aspect-ration der Bilder korrekt dargestellt wird
+*/
+.projectIMG {
+    width: 350px;
+    height: 350px;
+}
+
+.projectItem {
+    /*    background-color: yellow;*/
+    display: flex;
+    flex: 1 1 100%;                 /*  wachsen, schrumpfen, min-Breite */
+    flex-direction: column;         /* flexible Höhe der Textspalte */
+    justify-content: center;
+    max-width: 500px;
+    padding: 2em;
+}
+
+/*---------------*/
+.cultureIntro {
+    /*    background-color: yellow;*/
+    max-width: 600px;
+
+}
+
+.cultureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;         /*Objekte horizontal zentriert */
+}
+
+.cultureItem {
+    /*    background-color: yellow;*/
+    display: flex;
+    flex: 0 1 100%;                 /*  wachsen, schrumpfen, min-Breite */
+    flex-direction: column;         /* flexible Höhe der Textspalte */
+    /*    justify-content: center;*/
+    max-width: 400px;
+    padding: 1em;
+    border: 4px solid #3d6baa;
+    margin: 1em;
+}
+
+.cultureItem > h3 {
+    margin: 0 0 0.5em 0;
+}
+
+.projectItem > h3:after,
+.cultureItem > h3:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 4%;
+    border: 3px solid #3d6baa;
+    margin-top: 8px;
+}
+
+
+table {
+    margin: Auto;
+    border-collapse: Collapse;
+}
+
+thead th {
+    background-color: #3d6baa;
+    color: #fff;
+}
+
+table tr th,
+table tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #3d6baa;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/*---------------*/
+
+
+
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*    width: 100%;*/
+    margin-top: 50px;
+}
+
+.textItem {
+    /*    background-color: grey;*/
+    display: flex;
+    flex: 0 1 100%;                 /*  wachsen, schrumpfen, min-Breite */
+    flex-direction: column;         /* flexible Höhe der Textspalte */
+    max-width: 500px;
+    padding: 1em;
+}
+
+.textItem > h2 {
+    font-size: 2em;
+    margin: 0 0 0.5em 0.3em;
+}
+
+.contactItem {
+    /*    background-color: grey;*/
+    display: flex;
+    flex: 0 1 auto;                 /*  wachsen, schrumpfen, min-Breite */
+    flex-direction: column;
+    width: 300px;
+    padding: 1em;
+}
+
+.contactItem > h3 {
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+
+.contactIMG {
+    width: 300px;
+    height: 344.59px;
+}
+
+/* Formular */
+form {
+    max-width: 420px;
+    margin: 5px auto;
+}
+
+.contactInput {
+    color: white;
+    font-family: AvenirNext, Verdana, sans-serif;
+    font-size: 1.2em;
+    border-radius: 5px;
+    line-height: 1.2;
+    background-color: transparent;
+    border: 2px solid #3d6baa;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;         /* border-box = Gesamtsumme (width + padding + border) */
+    outline: 0;                     /* outline ist ein Rahmen um die ganze box drumherum: beim Reinklicken zu sehen */
+}
+
+.contactInput:focus {
+    border: 2px solid #3d6baa;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+/*Absende-Button*/
+
+[type = "submit"] {
+    width: 100%;
+    background: #3d6baa;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: bold;
+}
+[type = "submit"]:hover {
+    background: #3d6baa;
+}
+
+
+/* Headlines */
+/* Angabe der font-size in em erlaubt dem user, die font size über den Browser anzupassen.
+ * The default text size in browsers is 16px. So, the default size of 1em is 16px. 
+*/
+h1 {
+    /*    display: block;                 /\* block: Umruch nach unten, inline: wie Fließtext *\/*/
+    font-size: 4em; /*8vw*/
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 70px;
+    margin: 0;
+}
+
+h2 {
+    /*    display: block;*/
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #3d6baa;
+    padding: 0;
+    margin: 1em 0 1em 0;
+}
+
+h3 {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    padding: 0.5em;
+}
+
+p {
+    font-family: "Cormorant Garamond", Helvetica, serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0.5em;
+}
+
+p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3d6baa;
+    background-color: transparent;
+    padding: 0.2em;
+    margin: 0;
+}
+
+q {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.3;
+    hyphens: auto;                  /*Silbentrennung*/
+    text-align: justify;            /*Blocksatz*/
+    color: #3d6baa;
+    padding: 20px 70px 20px 30px;
+}
+
