@@ -1,14 +1,22 @@
 <!doctype html>
 <html lang="en-DE">
-<head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Margit Rosenburg">
-        <meta name="description" content="CV Margit Rosenburg">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
-        <title>CV Margit Rosenburg</title>
-</head>
-<body>
-    <iframe src="CV Margit Rosenburg.pdf" width=80%/>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Margit Rosenburg">
+		<meta name="description" content="CV Margit Rosenburg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
+		<title>CV Margit Rosenburg</title>
+		<script>
+			$(function(){
+				$(document).ready(function () {
+            		$('#openPDF')[0].click();
+        			});
+    		});
+		</script>
+	</head>
+	<body>
+			
+		<a id="openPDF" href="CV_MargitRosenburg.pdf">CV-PDF redirect</a>
+	</body>
 </html>
