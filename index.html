@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" manifest="cache.manifest">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="generator" content="db_2_jqm.xsl" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Mobile Web-Anwendung zum Cray-X" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="Cray-X" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="application-name" content="Cray-X" />
+		<meta name="theme-color" content="black" />
+		<link rel="icon" sizes="192x192" href="bookicon.png" />
+		<link rel="apple-touch-icon" href="bookicon.png" />
+		<link rel="apple-touch-startup-image" href="bilder/Titel_medi.png" />
+		<link rel="manifest" href="manifest.webmanifest" />
+		<link rel="stylesheet" href="custom_jqm.css" type="text/css" />
+		<style type="text/css">
+			nav[data-role = "navbar"] > ul > li {
+				width: 20% !important;
+				clear: none !important;
+			}</style>
+		<link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.min.css" type="text/css" />
+		<script src="jqm/jquery-1.12.4.min.js" type="text/javascript"></script>
+		<script src="custom_jqm.js" type="text/javascript"></script>
+		<script src="jqm/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+		<title>Cray-X Kurzreferenz</title>
+	</head>
+	<body>
+		<article data-role="page" id="start" data-title="Inhaltsverzeichnis">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a class="ui-btn ui-btn-active ui-icon-home ui-btn-icon-left ui-corner-all"
+					>Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left ui-corner-all">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<div id="logo">
+					<h1>Cray-X Kurzreferenz</h1>
+					<p>
+						<img src="bilder/Titel_medi.png" alt="Cray-X-Logo" />
+					</p>
+				</div>
+				<h2>Inhaltsverzeichnis</h2>
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="#kap1">Über das Cray-X</a>
+					</li>
+					<li>
+						<a href="#kap2">Sicherheitshinweise</a>
+					</li>
+					<li>
+						<a href="#kap3">Cray-X Übersicht</a>
+					</li>
+					<li>
+						<a href="#kap4">Bedienung</a>
+					</li>
+					<li>
+						<a href="#kap5">Kontakt</a>
+					</li>
+				</ul>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+			</footer>
+		</article>
+		<article data-role="page" id="info" data-title="Informationen">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all"
+					>Start</a>
+				<a class="ui-btn ui-btn-active ui-icon-info ui-btn-icon-left ui-corner-all">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<h2>Impressum</h2>
+				<h3>Material und Umsetzung</h3>
+				<p>Ein Projekt für den Kurs Mobile Dokumentation im Wintersemester 2022/23 im
+					Studiengang Informationsdesign &amp; Medienmanagement, umgesetzt mit DocBook und
+					jQuery Mobile.</p>
+				<p>Master IDMM22 | Text- und Bildinhalte: Margit Rosenburg / Lisa Tschirner / Isabel
+					Mallqui Chacón</p>
+				<p>Mobile Umsetzung: Margit Rosenburg </p>
+				<p>© 2023 Hochschule Merseburg / Fachbereich WIW</p>
+				<h3>Kontakt</h3>
+				<address>
+					<p>Hochschule Merseburg</p>
+					<p>Fachbereich WIW</p>
+					<p>Margit Rosenburg</p>
+					<p>Eberhard-Leibnitz-Str. 2</p>
+					<p>06217 Merseburg</p>
+					<p>Deutschland</p>
+					<p>&#x260E; +49 3461 46 2424</p>
+					<p>&#x1F4E7; <a href="mailto:margit.rosenburg@stud.hs-merseburg.de"
+							>margit.rosenburg@stud.hs-merseburg.de</a>
+					</p>
+				</address>
+				<h3>Stand</h3>
+				<p>24.01.2024</p>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+			</footer>
+		</article>
+		<article data-role="page" id="kap1" data-title="Über das Cray-X">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-back ui-btn-icon-left">Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a class="ui-btn-active ui-state-persist" data-icon="eye">Über das
+								Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<section data-role="collapsibleset" data-collapsed-icon="arrow-d"
+					data-expanded-icon="arrow-u">
+					<h1>Über das Cray-X</h1>
+					<section data-role="collapsible">
+						<h2>Wie wirkt das Cray-X?</h2>
+						<h3>
+							<em>Das Cray-X unterstützt den unteren Rücken aktiv bei Hebe- und
+								Haltetätigkeiten:</em>
+						</h3>
+						<ul data-role="listview" data-inset="true">
+							<li>
+								<p>Der Rücken bei jeder Bewegung gerade gehalten. Dies verhindet
+									eine ungesunde Rückenkrümmung und Spitzenbelastungen der
+									Bandscheiben.</p>
+							</li>
+							<li>
+								<p>Das Aufrichten und Absenken des Oberkörpers durch Elektromotoren
+									unterstützt. Dies schont die Rückenmuskulatur.</p>
+							</li>
+							<li>
+								<p>Die Muskulatur bei Arbeiten in Vorbeuge-Haltungen vor dauerhafter
+									Anspannung geschützt.</p>
+							</li>
+						</ul>
+					</section>
+					<section data-role="collapsible">
+						<h2>Wobei unterstützt das Cray-X in der Pflege?</h2>
+						<ul data-role="listview" data-inset="true">
+							<li>
+								<p>Heben und Bewegen von Patientinnen und Patienten.</p>
+							</li>
+							<li>
+								<p>Heben aus Betten in Rollstühle &amp; umgekehrt.</p>
+							</li>
+							<li>
+								<p>Hilfe bei medizinischen Untersuchungen.</p>
+							</li>
+							<li>
+								<p>Anheben beim Waschen &amp; Umziehen.</p>
+							</li>
+							<li>
+								<p>Hilfe bei der Umlagerung von immobilen Pflegebedürftigen.</p>
+							</li>
+						</ul>
+						<p class="center">
+							<img src="bilder/Pflege.png" alt="" width="300" />
+						</p>
+					</section>
+				</section>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+				<a href="#kap2" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-forward"
+					>weiter</a>
+			</footer>
+		</article>
+		<article data-role="page" id="kap2" data-title="Sicherheitshinweise">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-back ui-btn-icon-left">Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a class="ui-btn-active ui-state-persist" data-icon="eye"
+								>Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<section data-role="collapsibleset" data-collapsed-icon="arrow-d"
+					data-expanded-icon="arrow-u">
+					<h1>Sicherheitshinweise</h1>
+					<section data-role="collapsible">
+						<h2>Allgemeine Sicherheitshinweise</h2>
+						<ul data-role="listview" data-inset="true">
+							<li>
+								<p>Schwangeren und nicht eingewiesenen Personen ist die Benutzung
+									des Cray-X untersagt.</p>
+							</li>
+							<li>
+								<p>Sturzgefahr! Gurte und Beinanbindungen können an Gegenständen
+									hängen bleiben. Achten Sie auf ausreichenden Platz! Vermeiden
+									Sie schnelles Gehen und Rennen! Besteigen Sie keine Leitern mit
+									dem Cray-X!</p>
+							</li>
+							<li>
+								<p>Falsch angelegte Gurte können zu Verspannungen und
+									Hautirritationen führen. Beachten Sie die ausführlichen Hinweise
+									im Online-Handbuch!</p>
+							</li>
+							<li>
+								<p>Entfernen Sie bei Nichtnutzung des Cray-X immer den Akku, um
+									unkontrollierte Motorbewegungen auszuschließen. Beachten Sie die
+									Angaben des Herstellers zur Lagerung.</p>
+							</li>
+						</ul>
+						<div class="warnblock">
+							<h3 class="important">Wichtig!</h3>
+							<p>Beachten Sie auch die ausführlichen Sicherheitshinweise im <a
+									href="https://docs.germanbionic.io/de/cray-x-4/" target="extern"
+									> Online-Handbuch!</a>
+							</p>
+						</div>
+					</section>
+					<section data-role="collapsible">
+						<h2>Umgebungsbedingungen</h2>
+						<ul data-role="listview" data-inset="true">
+							<li>
+								<p>Minimale Raumbreite bei Verwendung: 113,5 cm.</p>
+							</li>
+							<li>
+								<p>Vor Wasser- und Staubeindringung schützen!</p>
+							</li>
+							<li>
+								<p>Vor direkter Sonneneinstrahlung schützen!</p>
+							</li>
+							<li>
+								<p>Nur im Innenbereich betreiben!</p>
+							</li>
+						</ul>
+					</section>
+					<section data-role="collapsible">
+						<h2>Notaus</h2>
+						<div class="warnblock">
+							<h3 class="important">Wichtig!</h3>
+							<p>Dient zum sofortigen Ausschalten des Cray-X in einer gefährlichen
+								Situation.</p>
+						</div>
+						<p>
+							<strong>Notaus auslösen:</strong>
+						</p>
+						<p>
+							<img src="bilder/Ausloesen.png" alt="" width="300" />
+						</p>
+						<p>
+							<strong>Notaus zurücksetzen:</strong>
+						</p>
+						<p>
+							<img src="bilder/Ruecksetzen.png" alt="" width="300" />
+						</p>
+						<ol>
+							<li>
+								<p>Drehen Sie den Notaus-Knopf im Uhrzeigersinn bis er
+									herausspringt.</p>
+							</li>
+							<li>
+								<p>Bestätigen Sie mit dem Ein-Aus-Knopf das Rücksetzen.</p>
+							</li>
+						</ol>
+						<div class="result">
+							<p>Nach dem Zurücksetzen zeigt das Display die zuletzt aktive
+								Anwendung.</p>
+						</div>
+					</section>
+				</section>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+				<a href="#kap1" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">zurück</a>
+				<a href="#kap3" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-forward"
+					>weiter</a>
+			</footer>
+		</article>
+		<article data-role="page" id="kap3" data-title="Cray-X Übersicht">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-back ui-btn-icon-left">Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a class="ui-btn-active ui-state-persist" data-icon="eye">Cray-X
+								Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<section data-role="collapsibleset" data-collapsed-icon="arrow-d"
+					data-expanded-icon="arrow-u">
+					<h1>Cray-X Übersicht</h1>
+					<p class="center">
+						<img src="bilder/CrayXUebersicht.png" alt="" width="600" />
+					</p>
+				</section>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+				<a href="#kap2" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">zurück</a>
+				<a href="#kap4" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-forward"
+					>weiter</a>
+			</footer>
+		</article>
+		<article data-role="page" id="kap4" data-title="Bedienung">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-back ui-btn-icon-left">Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a class="ui-btn-active ui-state-persist" data-icon="eye">Bedienung</a>
+						</li>
+						<li>
+							<a href="#kap5" data-icon="action">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<section data-role="collapsibleset" data-collapsed-icon="arrow-d"
+					data-expanded-icon="arrow-u">
+					<h1>Bedienung</h1>
+					<section data-role="collapsible">
+						<h2>Anlegen &amp; Ablegen</h2>
+						<p>
+							<img src="bilder/Anlegen.png" alt="" width="500" />
+						</p>
+						<ol>
+							<li>
+								<p> Schließen Sie zuerst den Beckengurt.</p>
+								<div class="warnblock">
+									<h3 class="important">Wichtig!</h3>
+									<p>Stellen Sie sicher, dass der Beckengurt die Hüftknochen eng
+										umschließt.</p>
+								</div>
+							</li>
+							<li>
+								<p> Schließen Sie nun die beiden Brustgurte.</p>
+							</li>
+							<li>
+								<p>Fädeln Sie den Gurt ein und arretieren sie ihn mit der
+									Lasche.</p>
+							</li>
+							<li>
+								<p>Zum Lösen: Heben Sie die Lasche an.</p>
+							</li>
+						</ol>
+					</section>
+					<section data-role="collapsible">
+						<h2>Einschalten &amp; Kalibrieren</h2>
+						<div class="warnblock">
+							<h3 class="note">Hinweis!</h3>
+							<p>Stehen Sie währen des Kalibriervorganges aufrecht und ruhig.</p>
+						</div>
+						<p>
+							<img src="bilder/Einschalten.png" alt="" width="300" />
+						</p>
+						<ol>
+							<li>
+								<p>Drücken Sie den Ein/Aus-Knopf einmal.</p>
+								<div class="stepresult">
+									<p>Das Display zeigt den Kalibrierungsassistenten mit einer
+										Abbildung der eigenen Körperhaltung.</p>
+								</div>
+							</li>
+							<li>
+								<p>Folgen Sie den Display-Hinweisen zur Körperhaltung.</p>
+							</li>
+						</ol>
+						<div class="result">
+							<p>Am Ende eines erfolgreichen Kalibriervorgangs erscheint der
+								Hauptbildschirm auf dem Display.</p>
+						</div>
+					</section>
+					<section data-role="collapsible">
+						<h2>Display-Symbole</h2>
+						<p>
+							<img src="bilder/BlauerPfeil.png" alt="Blauer Pfeil = Profil Ablegen"
+								width="150" />
+						</p>
+						<p class="caption">Blauer Pfeil = Profil Ablegen</p>
+						<p>
+							<img src="bilder/RoterPfeil.png" alt="Roter Pfeil = Profil Anheben"
+								width="150" />
+						</p>
+						<p class="caption">Roter Pfeil = Profil Anheben</p>
+						<p>
+							<img src="bilder/GruenerPfeil.png" alt="Grüner Pfeil = Profil Halten"
+								width="150" />
+						</p>
+						<p class="caption">Grüner Pfeil = Profil Halten</p>
+						<p>
+							<img src="bilder/Kraft.png"
+								alt="Unterstüztungsgrad = Kraft, die beim Aufrichten hilft"
+								width="150" />
+						</p>
+						<p class="caption">Unterstüztungsgrad = Kraft, die beim Aufrichten hilft</p>
+						<p>
+							<img src="bilder/Gegenkraft.png"
+								alt="Gegenkraft = Kraft, die den Oberkörper in der Vorbeuge festhält"
+								width="150" />
+						</p>
+						<p class="caption">Gegenkraft = Kraft, die den Oberkörper in der Vorbeuge
+							festhält</p>
+						<p>
+							<img src="bilder/Sterne.png"
+								alt="Stern = zuvor genutztes Profil Blinkender Stern = derzeit aktives Profil"
+								width="150" />
+						</p>
+						<p class="caption">Stern = zuvor genutztes Profil</p>
+						<p class="caption">Blinkender Stern = derzeit aktives Profil</p>
+					</section>
+					<section data-role="collapsible">
+						<h2>Profileinstellungen</h2>
+						<div class="warnblock">
+							<h3 class="warning">Warnung!</h3>
+							<p>Verletzungsgefahr durch Verwechslung des Profils! Ein ungeeignetes
+								Profil kann zu unerwarteten Bewegungen führen.</p>
+							<p>Prüfen Sie bei jeder Benutzung den aktuellen Modus über das
+								Display!</p>
+						</div>
+						<div data-role="collapsibleset" data-collapsed-icon="arrow-d"
+							data-expanded-icon="arrow-u">
+							<section data-role="collapsible">
+								<h3>Profil wählen</h3>
+								<p>Das Display muss dazu den Hauptbildschirm zeigen.</p>
+								<p>
+									<img src="bilder/Waehlen.png" alt="" width="300" />
+								</p>
+								<ol>
+									<li>
+										<p>Drücken Sie den Einstellknopf mindestens eine Sekunde
+											lang.</p>
+										<div class="stepresult">
+											<p>Das Display zeigt die drei Profile „Anheben“ ,
+												„Halten“ und „Ablegen“ mit den eingestellten
+												Werten.</p>
+										</div>
+									</li>
+									<li>
+										<p>Drehen Sie den Einstellknopf, um ein Profil zu wählen.
+											Drücken Sie einmal zur Bestätigung.</p>
+									</li>
+								</ol>
+							</section>
+							<section data-role="collapsible">
+								<h3>Profil schnell umschalten</h3>
+								<div class="warnblock">
+									<h3 class="tip">Tipp!</h3>
+									<p>Nützlich, um schnell zwischen Hebe/Absenkaufgaben &amp;
+										Halteaufgaben zu wechseln, ohne die Werte für
+										Unterstützungsgrad und Gegenkraft neu einstellen zu
+										müssen.</p>
+								</div>
+								<p>Das Display muss dazu den Hauptbildschirm zeigen.</p>
+								<p>
+									<img src="bilder/Umschalten.png" alt="" width="300" />
+								</p>
+								<ol>
+									<li>
+										<p>Drücken Sie den Einstellknopf zwei mal kurz
+											nacheinander.</p>
+									</li>
+								</ol>
+								<div class="result">
+									<p>Das zuvor verwendete Profil ist nun aktiv. Das Display zeigt
+										die eingestellten Werte an.</p>
+								</div>
+							</section>
+							<section data-role="collapsible">
+								<h3>Profilwerte anpassen</h3>
+								<div class="warnblock">
+									<h3 class="tip">Tipp!</h3>
+									<p>Änderungen der Prozentwerte können vom Hauptbildschirm aus
+										eingestellt werden.</p>
+								</div>
+								<p>
+									<img src="bilder/Profilwert.jpeg" alt="" width="150" />
+								</p>
+								<ol>
+									<li>
+										<p>Drücken Sie den Einstellknopf, um zu einem anderen
+											Einstellwert zu springen.</p>
+										<div class="stepresult">
+											<p>Die aktive Einstellung ist Rot hinterlegt.</p>
+										</div>
+									</li>
+									<li>
+										<p>Drehen Sie den Einstellknopf, um den Prozentwert zu
+											ändern.</p>
+									</li>
+								</ol>
+								<div class="result">
+									<p>Die Änderungen werden für das entsprechende Profil sofort
+										gespeichert.</p>
+								</div>
+								<div class="warnblock">
+									<h3 class="tip">Tipp!</h3>
+									<p>Mit einem langen Klick gelangt man von jedem beliebigem
+										Bildschirm wieder zurück zum Hauptbildschirm.</p>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section data-role="collapsible">
+						<h2>Leerlaufmodus ein-und ausschalten</h2>
+						<p>
+							<img src="bilder/Leerlauf.png" alt="" width="300" />
+						</p>
+						<ol>
+							<li>
+								<p>Drücken Sie den Ein/Aus-Knopf einmal zum Starten des
+									Leerlaufmodus.</p>
+								<div class="stepresult">
+									<p>Das Cray-X unterstützt nun nicht mehr aktiv die Bewegungen.
+										Das Display zeigt ein Faultier.</p>
+								</div>
+							</li>
+							<li>
+								<p>Drücken Sie den Ein/Aus-Knopf 1x zum Beenden des
+									Leerlaufmodus.</p>
+							</li>
+						</ol>
+						<div class="result">
+							<p>Der Leerlaufmodus ist beendet. Das Display zeigt den Haupbildschirm
+								mit zuletzt aktivem Profil.</p>
+						</div>
+					</section>
+					<section data-role="collapsible">
+						<h2>Cray-X ausschalten &amp; ablegen</h2>
+						<p>
+							<img src="bilder/Ausschalten.png" alt="" width="500" />
+						</p>
+						<ol>
+							<li>
+								<p>Drücken Sie den Ein/Aus-Knopf mindestens drei bis maximal sieben
+									Sekunden lang.</p>
+								<div class="stepresult">
+									<p>Die Motoren schalten sich ab. Auf dem Display wird eine
+										Bewertungsskala von 0 bis 10 angezeigt.</p>
+								</div>
+							</li>
+							<li>
+								<p>Drücken Sie den Einstellknopf einmal zur Bestätigung.</p>
+								<div class="stepresult">
+									<p>Das Display zeigt einen Hinweis auf die Gewichtskompensation
+										und den Akkuladezustand. Der Einschaltknopf blinkt nicht
+										mehr.</p>
+								</div>
+							</li>
+							<li>
+								<p>Legen Sie das Exoskelett ab. Entnehmen Sie den Akku.</p>
+							</li>
+						</ol>
+						<div class="result">
+							<p>Das Cray-X ist nun vollständig abgeschaltet.</p>
+						</div>
+					</section>
+				</section>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+				<a href="#kap3" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">zurück</a>
+				<a href="#kap5" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-forward"
+					>weiter</a>
+			</footer>
+		</article>
+		<article data-role="page" id="kap5" data-title="Kontakt">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Cray-X Kurzreferenz</h1>
+				<a href="#start" class="ui-btn ui-icon-back ui-btn-icon-left">Start</a>
+				<a href="#info" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a>
+				<nav data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a href="#kap1" data-icon="action">Über das Cray-X</a>
+						</li>
+						<li>
+							<a href="#kap2" data-icon="action">Sicherheitshinweise</a>
+						</li>
+						<li>
+							<a href="#kap3" data-icon="action">Cray-X Übersicht</a>
+						</li>
+						<li>
+							<a href="#kap4" data-icon="action">Bedienung</a>
+						</li>
+						<li>
+							<a class="ui-btn-active ui-state-persist" data-icon="eye">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main data-role="main" class="ui-content">
+				<section data-role="collapsibleset" data-collapsed-icon="arrow-d"
+					data-expanded-icon="arrow-u">
+					<h1>Kontakt</h1>
+					<section data-role="collapsible">
+						<h2>Cray-X Hersteller</h2>
+						<p>
+							<img src="bilder/LogoBionic.png" alt="" width="300" />
+						</p>
+						<address>
+							<p>German Bionic Systems GmbH</p>
+							<p>August-Wessels-Strasse 23</p>
+							<p>86156 Augsburg</p>
+							<p>&#x260E; +49 (0) 821 907 497 80</p>
+							<p>&#x1F4E7; <a href="mailto:info@germanbionic.com"
+									>info@germanbionic.com</a>
+							</p>
+						</address>
+						<p>Hersteller-Website: <a href="https://germanbionic.io" target="extern"
+								>germanbionic.io</a>
+						</p>
+						<p>Vollständiges Cray-X <a href="https://docs.germanbionic.io/de/cray-x-4/"
+								target="extern">Online-Handbuch</a>
+						</p>
+					</section>
+					<section data-role="collapsible">
+						<h2>Kontakt zum Projektpartner TDG</h2>
+						<p>
+							<img src="bilder/LogoTDG.png" alt="" width="300" />
+						</p>
+						<address>
+							<p>Medizinische Fakultät Martin-Luther-Universität Halle-Wittenberg
+								Skills Lab — Projekt TDG</p>
+							<p>Magdeburger Straße 12</p>
+							<p>06112 Halle (Saale)</p>
+						</address>
+						<p>TDG-Website: <a href="https://inno-tdg.de/" target="extern"
+								>inno-tdg.de</a>
+						</p>
+					</section>
+				</section>
+			</main>
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false"
+				data-hide-during-focus="false" data-theme="b">
+				<h1>Mobile Doku 2023/24</h1>
+				<a href="#kap4" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">zurück</a>
+			</footer>
+		</article>
+	</body>
+</html>
