@@ -1,0 +1,200 @@
+{
+  "name": "Portfolio",
+  "children": [
+    {
+      "name": "Wissenschaftskommunikation",
+      "children": [
+        {
+          "name": "Wissenschaftsplakat & Studie: Die Macht der Autorenschaft",
+          "children": [
+            {
+              "name": "Die Macht der Autorenschaft",
+              "type": "Wissenschaftsplakat & Studie",
+              "categories": [
+                "Wissenschaftskommunikation"
+              ],
+              "description": "",
+              "image": "img/Plakat.jpg",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "TEST SUBCATEGORY!: BODIUM - DER BODENDINGS",
+          "children": [
+            {
+              "name": "BODIUM - DER BODENDINGS",
+              "type": "TEST SUBCATEGORY!",
+              "categories": [
+                "Wissenschaftskommunikation"
+              ],
+              "description": "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich durchgeführt ... anschaulich präsentiert ... toll!",
+              "image": "http://www.url.to.image1",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Datenvisualisierung: Javascript Charts",
+      "children": [
+        {
+          "name": "Genderkram",
+          "type": "Javascript Charts",
+          "categories": [
+            "Datenvisualisierung"
+          ],
+          "description": "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich ... anschaulich ... usw",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "UI/UX Design: Prototyping WebApp",
+      "children": [
+        {
+          "name": "Wolle? Rose? Kaufen?",
+          "type": "Prototyping WebApp",
+          "categories": [
+            "UI/UX Design"
+          ],
+          "description": "Kern dieser Arbeit ... mit dem Ziel ... ",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Illustration: 2D/3D",
+      "children": [
+        {
+          "name": "Interieur",
+          "children": [
+            {
+              "name": "Interieur",
+              "type": "2D/3D",
+              "categories": [
+                "Illustration"
+              ],
+              "description": "Kern dieser Arbeit ... ",
+              "image": "http://www.url.to.image1",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Exterieur",
+          "children": [
+            {
+              "name": "Exterieur",
+              "type": "2D/3D",
+              "categories": [
+                "Illustration"
+              ],
+              "description": "Kern dieser Arbeit ... ",
+              "image": "http://www.url.to.image1",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Technische Kommunikation",
+      "children": [
+        {
+          "name": "Spracharme Kurzanleitung (Print & WebApp): CrayX - Exoskelett",
+          "children": [
+            {
+              "name": "CrayX - Exoskelett",
+              "type": "Spracharme Kurzanleitung (Print & WebApp)",
+              "categories": [
+                "Technische Kommunikation"
+              ],
+              "description": "...",
+              "image": "http://www.url.to.image1",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Layout & Visualisierung: Techniklexikon",
+          "children": [
+            {
+              "name": "Techniklexikon",
+              "type": "Layout & Visualisierung",
+              "categories": [
+                "Technische Kommunikation"
+              ],
+              "description": "...",
+              "image": "http://www.url.to.image1",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typografie: Makro- & Mikrotypografie",
+      "children": [
+        {
+          "name": "Binnenräume & Schriftplakat",
+          "type": "Makro- & Mikrotypografie",
+          "categories": [
+            "Typografie"
+          ],
+          "description": "...",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Logodesign: Mockup",
+      "children": [
+        {
+          "name": "Monogramm & Visitenkarten",
+          "type": "Mockup",
+          "categories": [
+            "Logodesign"
+          ],
+          "description": "...",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Social Media: Podcast-Produktion & Webauftritt",
+      "children": [
+        {
+          "name": "Wartungsarbeiten",
+          "type": "Podcast-Produktion & Webauftritt",
+          "categories": [
+            "Social Media"
+          ],
+          "description": "...",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Corporate Design: Logo & Verpackung",
+      "children": [
+        {
+          "name": "Hanfgenuss",
+          "type": "Logo & Verpackung",
+          "categories": [
+            "Corporate Design"
+          ],
+          "description": "...",
+          "image": "http://www.url.to.image1",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

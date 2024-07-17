@@ -1,0 +1,719 @@
+/* Custom-CSS für jQM */
+
+/* colors
+ * background	blue	 #207895
+ * background	green	#6DBB80
+ * accent		blueDark #045E7B | alternative #125566
+ * accent		yellow   #FBDE2E
+ * accent		red	  #7B003B
+ * accent		pink	 #FB2E8F
+ * font
+ * headlines: Georama SemiBold | weight: 600
+ * results: Georama Italic | weight: 500
+ * body: Georama Regular | weight: 500
+ */
+
+/* latin */
+
+
+@font-face
+{
+	font-family: 'Georama-Regular';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: url(font/Georama-Regular.woff) format('woff');
+	/*url(font/Georama-Regular.ttf) format('truetype')*/
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face
+{
+	font-family: 'Georama-Italic';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: url(font/Georama-Italic.woff) format('woff');
+	/*url(font/Georama-Italic.ttf) format('truetype')*/
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face
+{
+	font-family: 'Georama-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: 100%;
+	src: url(font/Georama-SemiBold.woff) format('woff');
+	/*url(font/Georama-SemiBold.ttf) format('truetype')*/
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root
+{
+	--blue: #207895;
+	--green: #6DBB80;
+	--bluedark: #103E7D;
+	--yellow: #FBDE2E;
+	--red: #7B003B;
+	--pink: #FB2E8F;
+}
+
+html,
+body
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: var(--blue) !important;
+	font-family: Georama-Regular, sans-serif !important;
+}
+
+.ui-content
+{
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+/* button active */
+nav[data-role = "navbar"] .ui-btn-active
+{
+	color: #ffffff !important;
+	background-color: var(--blue) !important;
+	border: none !important;
+	cursor: default !important;
+}
+
+
+
+nav[data-role = "navbar"] .ui-btn
+{
+	background-color: var(--bluedark) !important;
+	font-family: Georama-Regular, sans-serif !important;
+}
+
+nav[data-role = "navbar"] .ui-btn-active
+{
+	background-color: var(--blue) !important;
+}
+
+nav[data-role = "navbar"] .ui-btn,
+nav[data-role = "navbar"] .ui-btn-active
+{
+	border-left: 1px solid #000000 !important;
+	border-right: 1px solid #000000 !important;
+}
+
+header[data-role = "header"]
+{
+	border-bottom: none !important;
+}
+
+header[data-role = "header"] h1
+{
+	color: #FFFFFF !important;
+	background-color: #000000 !important;
+	margin: 0 !important;
+	padding-top: 0.5em !important;
+}
+
+footer[data-role = "footer"] h1
+{
+	color: #FFFFFF !important;
+	background-color: #000000 !important;
+	font-weight: normal !important;
+	margin: 0 !important;
+}
+
+main[data-role = "main"] h1
+{
+	font-size: 1.8em !important;
+	margin: 0.5em 0 !important;
+}
+
+main[data-role = "main"] h2,
+main[data-role = "main"] h3,
+main[data-role = "main"] p,
+main[data-role = "main"] adress
+{
+	color: #ffffff !important;
+}
+
+.ui-mobile [data-role = "page"]
+{
+	background-color: var(--blue) !important;
+}
+
+.ui-mobile [data-role = "page"] *
+{
+	text-shadow: none !important;
+}
+
+.ui-footer
+{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.ui-footer > .ui-btn,
+.ui-header > .ui-btn
+{
+	margin: 0.1em -0.3em !important;
+	font-family: Georama-Regular, sans-serif !Important;
+}
+
+nav[data-role = "navbar"] > ul > li
+{
+	/*
+    100% / Button-Anzahl | dynamisch im XSLT realisiert, z. B. bei 6 Buttons:
+    width: 16.66% !important;
+    clear: none !important;
+  */
+}
+
+nav[data-role = "navbar"] > ul > li a:not(.ui-btn-active):hover
+{
+	color: #000000 !important;
+	background-color: var(--yellow) !important;
+}
+
+header[data-role = "header"] > a:not(.ui-btn-active):hover
+{
+	color: #FFFFFF !important;
+	background-color: var(--pink) !important;
+}
+
+footer[data-role = "footer"] > .ui-btn:hover
+{
+	color: #000000 !important;
+	background-color: var(--yellow) !important;
+}
+
+ol[data-role = "listview"] > li
+{
+	white-space: normal !important;
+}
+
+ol[data-role = "listview"] .ui-collapsible-content
+{
+	border: none !important;
+	text-indent: 0 !important;
+	margin-left: 1em !important;
+}
+
+ul[data-role = "listview"] li 
+{
+  border:  none !important;
+}
+
+ul[data-role = "listview"] li p
+{
+	padding-left: 1em !important;
+}
+
+ul[data-role = "listview"] li p::before
+{
+	content: "• ";
+	margin-left: -0.6em;
+}
+
+ul.plainlist
+{
+	list-style-type: disc;
+	padding-left: 1em !important;
+}
+
+.ui-page .ui-content .ui-listview li p
+{
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+	white-space: normal !important;
+}
+
+
+/* jquery.mobile-1.4.5.min.css | file:///Users/margit/Documents/Studium/_Mobile%20Doku/CrayX_Abgabe/jqm/jquery.mobile-1.4.5.min.css */
+
+
+.ui-listview,
+.ui-listview > li
+{
+	padding: 0.5em 2em !important;
+}
+
+ol > li::marker
+{
+	color: #ffffff !important;
+}
+
+ul
+{
+	background-color: var(--blue);
+}
+
+li
+{
+	background-color: var(--blue) !important;
+}
+
+
+.ui-mobile [data-role = "page"] *
+{
+	text-shadow: none !important;
+}
+
+
+p.infobox
+{
+	color: #000000 !important;
+	background-color: #EEEEEE !important;
+	border-left: 3px solid #CC0000 !important;
+	max-width: max-content !important;
+	display: inline-block !important;
+	padding: 0.3em !important;
+	margin: 0 !important;
+	vertical-align: middle !important;
+	text-indent: 0 !important;
+}
+
+span.posnum
+{
+	color: #FFFFFF !important;
+	background-color: #009900 !important;
+	font-weight: bold !important;
+	font-size: 14px !important;
+	display: inline-block !important;
+	border-radius: 50% !important;
+	width: 20px !important;
+	height: 20px !important;
+	padding: 4px 3px 2px 3px !important;
+	margin-top: -2px !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+}
+
+span.posnr
+{
+	color: #009900 !important;
+	background-color: inherit !important;
+	font-weight: bold !important;
+}
+
+/* Symbol for step result*/
+/*div.stepresult > p:first-child::before
+{
+	content: "\21D2" !important;
+	color: #ffffff !important;
+	display: inline !important;
+	font-weight: bold !important;
+	padding-right: 0.3em !important;
+}*/
+
+div.stepresult > p
+{
+	margin: 0 1em !important;
+	font-family: Georama-Italic, sans-serif !important;
+}
+
+div.stepresult > p::before
+{
+	display: inline-block !important;
+	width: 1.3em !important;
+	content: "\25BA" !important; /* Zeichen für kleines Dreieck */
+	margin-left: -1.3em !important;
+}
+
+/* Symbol for final result*/
+
+div.result > p
+{
+	padding-left: 1.3em !important;
+}
+
+
+div.result > p:first-child::before
+{
+	content: "\2713" !important;
+	color: #ffffff !important;
+	display: inline-block !important;
+	width: 1em !important;
+	font-family: Georama-Italic, sans-serif !important;
+	padding-right: 0.3em !important;
+	margin-left: -1.3em !important;
+}
+
+#kap2,
+#kap2 h1,
+#kap2 p,
+#kap2 h2 > a,
+#kap2 ol > li::marker,
+#kap2 div.result > p:first-child::before,
+#kap2 nav[data-role = "navbar"] .ui-btn-active,
+#kap2 .ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle
+{
+	color: #000000 !important;
+}
+
+#kap2,
+#kap2 li,
+#kap2 ul,
+#kap2 nav[data-role = "navbar"] .ui-btn-active,
+#kap2 .ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content
+{
+	background-color: var(--green) !important;
+}
+
+.center,
+div#logo *
+{
+	text-align: center !important;
+}
+
+h1
+{
+	text-align: center !important;
+	font-family: Georama-SemiBold, sans-serif !important;
+	color: #ffffff !important;
+}
+
+h3 > em
+{
+	color: #ffffff !important;
+	font-size: 1em !important;
+	font-weight: bold !important;
+	font-style: normal !important;;
+}
+
+p
+{
+	hyphens: auto !important;
+	/*	text-align: justify !important;*/
+	line-height: 1.5 !important;
+	font-family: Georama-Regular, sans-serif !important;
+}
+
+li p
+{
+	font-size: 1em !important;
+}
+
+strong.aktion
+{
+	color: #0000CC !important;
+	background-color: inherit !important;
+}
+
+
+/* colors for collabsible when un-collapsed */
+section[data-role = "collapsible"] a
+{
+	color: var(--blue) !important;
+	background-color: #ffffff !important;
+	font-family: Georama-SemiBold, sans-serif !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+}
+
+section[data-role = "collapsible"]
+.warnblock > p > a
+{
+	background-color: var(--green) !important;
+}
+
+section[data-role = "collapsible"] p a,
+address p a
+{
+	color: var(--yellow) !important;
+	background-color: var(--blue) !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+}
+
+img,
+object
+{
+	max-width: 100% !important;
+	/* to center the image:	*/
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+img.inline
+{
+	display: inline-block !important;
+	vertical-align: text-bottom !important;
+	height: 1.1em !important;
+}
+
+.ui-table,
+.ui-table td,
+.ui-table th
+{
+	border-collapse: collapse !important;
+	border: 1px solid #999999 !important;
+	text-align: center !important;
+	margin-top: 0.5em !important;
+}
+
+.ui-table thead th,
+.ui-table tfoot th
+{
+	color: #0000CC !important;
+	background-color: #FFCC00 !important;
+	min-width: 33.3% !important;
+}
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content
+{
+	background-color: var(--blue) !important;
+}
+
+/* Text color collapsed-list */
+.ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle
+{
+	color: #ffffff !important;
+	background-color: inherit !important;
+	/*	font-weight: bold !important;*/
+	font-family: Georama-SemiBold, sans-serif !important;
+}
+
+.ui-collapsible-heading-toggle
+{
+	color: #FFFFFF !important;
+	background-color: #999999 !important;
+	font-family: Georama-Regular, sans-serif !important;
+	/*	font-weight: normal !important;*/
+}
+
+/* bei Bedarf zum Beeinflussen von Schatten */
+/*.ui-collapsible .ui-collapsible-heading-toggle.ui-btn:focus, .ui-listview .ui-btn:focus
+{
+  box-shadow: none !important;
+}
+*/
+
+/* oder allgemeiner */
+/*.ui-focus, .ui-btn:focus
+{
+  box-shadow: none !important;
+}
+*/
+
+.ui-shadow {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+main .ui-grid-a .ui-block-a
+{
+	padding-right: 0.5em !important;
+	max-width: max-content !important;
+}
+
+main .ui-grid-a .ui-block-b
+{
+	padding-left: 0.5em !important;
+	max-width: max-content !important;
+}
+
+.warnblock
+{
+	width: 42em !important;
+	max-width: 100% !important;
+	margin: 0.8em 0 1em 0 !important;
+	border: 2px solid #ffffff !important;
+	border-radius: 14px !important;
+
+	/*	background-color: #eeeeee !important;*/
+}
+
+.warnblock h3
+{
+	margin: 0 !important;
+	padding: 0.3em !important;
+	border-top-right-radius: 14px !important;
+	border-top-left-radius: 14px !important;
+	/*	font-weight: normal !important;*/
+	text-shadow: none !important;
+}
+
+.warnblock h3::before
+{
+	padding-right: 0.3em !important;
+}
+
+.warnblock p
+{
+	padding-left: 0.8em !important;
+	padding-right: 0.6em !important;
+	color: #000000 !important;
+}
+
+h3.caution
+{
+	color: #000000 !important;
+	background-color: #F5FF00 !important;
+}
+
+h3.important
+{
+	color: #ffffff !important;
+	background-color: #DE7D00 !important;
+}
+
+h3.note
+{
+	color: #ffffff !important;
+	background-color: var(--bluedark) !important;
+}
+
+h3.note::before
+{
+	content: "\1F4F0" !important;
+}
+
+h3.tip
+{
+	color: #ffffff;
+	background-color: #000000 !important;
+}
+
+h3.tip::before
+{
+	content: "\1F4A1" !important;
+}
+
+h3.warning
+{
+	color: #FFFFFF !important;
+	background-color: #BB2724 !important;
+}
+
+h3.caution::before,
+h3.important::before,
+h3.warning::before
+{
+	content: "\26A0" !important;
+}
+
+.intro
+{
+	padding: 0.1em 1em !important;
+	margin: 0.5em 0 !important;
+	border: none /*2px solid #F3E786*/ !important;
+	max-width: max-content !important;
+	color: inherit !important;
+	background-color: #FFFFFF !important;
+}
+
+.intro > p::before
+{
+	content: "\1F4A1" !important;
+	margin-top: -0.5em !important;
+	padding-right: 0.3em !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+.infopin
+{
+	padding: 0 0.5em !important;
+	margin: 0.5em 0 !important;
+	border: 2px solid #EEB6B5 !important;
+	max-width: max-content !important;
+	color: inherit !important;
+	background-color: #FFFFFF !important;
+}
+
+.infopin > p::before
+{
+	content: "\1F4CC" !important;
+	margin-top: -0.5em !important;
+	padding-right: 0.3em !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+table.simple,
+table.simple td
+{
+	border: 1px solid #000000 !important;
+	border-collapse: collapse !important;
+	padding: 0.5em !important;
+	margin: 0.5em !important;
+}
+
+dt
+{
+	color: #000000 !important;
+	background-color: inherit !important;
+	font-weight: bold !important;
+}
+
+dd
+{
+	margin: 0 1em !important;
+}
+
+dd p
+{
+	margin-top: 0 !important;
+}
+
+article#info h3 + p,
+article#info p + p
+{
+	margin-top: -0.75em !important;
+}
+
+article#info h3 + address
+{
+	margin-top: -0.25em !important;
+	margin-bottom: 1.5em !important;
+}
+
+article#info address p + p
+{
+	margin-top: 1em !important;
+}
+
+span.keyword
+{
+	border: 1px dashed #0000CC !important;
+}
+
+span[data-anchor]
+{
+	display: none !important;
+}
+
+li[data-role = "list-divider"]
+{
+	color: #0000CC !important;
+	background-color: inherit !important;
+	font-size: 1.1em !important;
+	padding-left: 0.25em !important;
+}
+
+p.caption
+{
+	/*	font-size: 0.9em !important;*/
+	font-family: Georama-Italic !important;
+	margin-top: -1em !important;
+}
+
+/* font Inhaltsverzeichnis */
+.ui-btn.ui-btn-icon-right.ui-icon-carat-r
+{
+	font-family: Georama-Regular, sans-serif !important;
+	color: #000000 !important;
+}
+
+
+
+
+
+span.hervor
+{
+	color: var(--yellow) !important;
+}

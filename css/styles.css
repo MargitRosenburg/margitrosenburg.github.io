@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px; /* Padding added to the half divs */
+    text-align: center; /* Center text horizontally */
+    word-wrap: break-word; /* Ensure long words break */
+}
+
+.left {
+    background-color: #3498db; /* Blue */
+}
+
+.right {
+    background-color: #2ecc71; /* Green */
+}
+
+.content h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px; /* Padding added to the content */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Modern sans-serif font */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}

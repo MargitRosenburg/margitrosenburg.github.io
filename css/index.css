@@ -1,0 +1,30 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+#chartdiv {
+  width:100%;
+  height:100%;
+  position:absolute;
+  margin:auto;
+}
+
+
+.lbl {
+  position: absolute  !important;
+  width: calc(100% - 1px) !important;
+  height: calc(100% - 1px) !important;
+  overflow:hidden  !important;
+}
+
+.lbl.child {
+  background-size:contain !important;
+}
+
+.lbl.parent {
+  background-size: cover !important;
+  background-position: left bottom !important;
+}
