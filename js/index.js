@@ -16,82 +16,77 @@ const rootName = "Portfolio";
 
 const items = [
   {
-    name:        "Die Macht der Autorenschaft",
-    type:        "Wissenschaftsplakat & Studie",
-    categories:  ["Wissenschaftskommunikation"],
-    description: "",
-    image:       "img/WissPlakat.png"
+    categories:      ["Kommunikation"],
+    type:            "Wissenschaftliche Kommunikation",
+    name:            "Wissenschaftsplakat & Studie",
+    description:     "",
+    image:           "img/WissPlakat.png",
+    backgroundColor: am5.Color.fromString("#c1d0ce")
   },
   {
-    name:        "BODIUM - DER BODENDINGS",
-    type:        "TEST SUBCATEGORY!",
-    categories:  ["Wissenschaftskommunikation"],
+    categories:  ["Webentwicklung"],
+    type:        "UI-Design",
+    name:        "Prototyping für Web-App",
     description: "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich durchgeführt ... anschaulich präsentiert ... toll!",
-    image:       "img/UIDesign.png"
+    image:       "img/UIDesign.png",
+    backgroundColor: am5.Color.fromString("#f7f7f7")
   },
   {
-    name:        "Datenvisualisierung",
-    type:        "Javascript Charts",
-    categories:  ["Datenvisualisierung"],
+    categories:  ["Visualisierung", "Webentwicklung"],
+    type:        "Datenvisualisierung",
+    name:        "Javascript Charts und Animationen",
     description: "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich ... anschaulich ... usw",
-    image:       "img/Datenvis.png"
+    image:       "img/Datenvis.png",
+    backgroundColor: am5.Color.fromString("#5a407a")
   },
   {
-    name:        "Wolle? Rose? Kaufen?",
-    type:        "Prototyping WebApp",
-    categories:  ["UI/UX Design"],
-    description: "Kern dieser Arbeit ... mit dem Ziel ... "
-    //image:       "img/Plakat.jpg"
-  },
-  {
-    name:        "Interieur",
-    type:        "2D/3D",
-    categories:  ["Illustration"],
+    categories:  ["Visualisierung"],
+    type:        "Illustration",
+    name:        "2D/3D Interieur",
     description: "Kern dieser Arbeit ... ",
-    image:       "img/Illustration.png"
+    image:       "img/Illustration.png",
+    backgroundColor: am5.Color.fromString("#92ad90")
   },
   {
-    name:        "CrayX - Exoskelett",
-    type:        "Spracharme Kurzanleitung (Print & WebApp)",
-    categories:  ["Technische Kommunikation"],
+    categories:  ["Kommunikation", "Webentwicklung", "Print"],
+    type:        "Technische Kommunikation",
+    name:        "Spracharme Kurzanleitung Print & Web-App",
     description: "...",
-    image:       "img/ExoAnleitung.png"
+    image:       "img/ExoAnleitung.png",
+    backgroundColor: am5.Color.fromString("#729ba6")
   },
   {
-    name:        "Techniklexikon",
-    type:        "Layout & Visualisierung",
-    categories:  ["Technische Kommunikation"],
+    categories:  ["Kommunikation", "Print"],
+    type:        "Technische Kommunikation",
+    name:        "Techniklexikon: Layout & Visualisierung",
     description: "...",
-    image:       "img/TechnikLexikon.png"
+    image:       "img/TechnikLexikon.png",
+    backgroundColor: am5.Color.fromString("#fce0a2")
   },
   {
-    name:        "Binnenräume & Schriftplakat",
-    type:        "Makro- & Mikrotypografie",
-    categories:  ["Typografie"],
+    categories:  ["Visualisierung"],
+    type:        "Typografie",
+    name:        "Binnenräume & Specimen Poster",
     description: "...",
-    image:       "img/Typografie.png"
+    image:       "img/Typografie.png",
+    backgroundColor: am5.Color.fromString("#e9605d")
   },
   {
+    categories:  ["Print"],
+    type:        "Logo-Design",
     name:        "Monogramm & Visitenkarten",
-    type:        "Mockup",
-    categories:  ["Logodesign"],
     description: "...",
-    image:       "img/LogoDesign.png"
+    image:       "img/LogoDesign.png",
+    backgroundColor: am5.Color.fromString("#e8e8e8")
   },
   {
-    name:        "Wartungsarbeiten",
-    type:        "Podcast-Produktion & Webauftritt",
-    categories:  ["Social Media"],
+    categories:  ["Kommunikation", "Webentwicklung"],
+    type:        "Social Media ",
+    name:        "Podcast-Produktion & Webauftritt",
     description: "...",
-    image:       "img/SocialMedia.png"
+    image:       "img/SocialMedia.png",
+    backgroundColor: am5.Color.fromString("#70a6b2")
   },
-  {
-    name:        "Hanfgenuss",
-    type:        "Logo & Verpackung",
-    categories:  ["Corporate Design"],
-    description: "...",
-    image:       "img/CorporateDesign.png"
-  }
 ];
 
 // END CONFIGURATION
@@ -216,38 +211,12 @@ const series = container.children.push(
   )
 );
 
-//---
-
-
-
-
-
-// override some template stuff (doesn't work with VoronoiTreemap)
-/*
-series.rectangles.template.setAll({
-  cornerRadiusTL: 10,
-  cornerRadiusTR: 10,
-  cornerRadiusBL: 10,
-  cornerRadiusBR: 10
-});
-
-// VoronoiTreemap
-series.polygons.template.setAll({
-  strokeWidth: 5,
-  strokeRadius:10
-});
-*/
-
-// Custom Tooltip text
-//series.nodes.template.set("tooltipText", "[bold]{name}[/]");
-//series.labels.template.set("html", '<img src="img/Plakat.jpg"/>');
-
 
 // set the data to the series object
 series.data.setAll([data]);
 
 
-
+// hide tooltips
 series.set(
   "tooltip",
   am5.Tooltip.new(root, {
@@ -256,64 +225,110 @@ series.set(
 );
 
 
-function getImages(dataContext) {
+// custom functions
+function getValues(propName, dataContext) {
   
   if(!dataContext)
     dataContext = series.dataItems[0].dataContext;
   
-  const images = [];
-  !dataContext.image || images.push(dataContext.image);
+  const values = [];
+  !dataContext[propName] || values.push(dataContext[propName]);
 
   if(dataContext.children) {
     for(const child of dataContext.children) {
-      images.push(...getImages(child));
+      values.push(...getValues(propName, child));
     }
   }
 
-  return images;
+  return values;
 }
 
-function getRandomImage(dataContext) {
-  const images = getImages(dataContext);
-  const i      = Math.floor(Math.random() * images.length );
-  return images[i];
+function getRandomValue(propName, dataContext) {
+  const values = getValues(propName, dataContext);
+  const i      = Math.floor(Math.random() * values.length );
+  return values[i];
 }
 
+function getLabelHTML(dataContext, uid)
+{
+  let className = "lbl";
+  if(dataContext.children)
+    className += " parent";
+  else
+    className += " child";
+  
+  let bgColor = getRandomValue("backgroundColor", dataContext);
+  let image   = getRandomValue("image", dataContext);
+  let styles  = [];
+  let style   = "";
+
+  if(bgColor)
+    styles.push("background-color: " + bgColor);
+
+  if(image)
+    styles.push('background-image:url(' + image + ')');
+  
+  if(styles.length > 0)
+    style = ' style="' + styles.join(";") + '"';
+
+  const name = image ? '' : dataContext.name;
+  return '<div id="lbl_' + uid + '" class="' + className + '"' + style + '>' + name + '</div>';
+}
+//---
+
+// set the labels to be the html content of each node
 series.labels.each(function(label) {
-  label.adapters.add("html", function (html, label) {
-    
-    const dataContext = label.parent.dataItem.dataContext;
-    if(dataContext.name == rootName)
-      return html;
+  
+  if(label.parent.dataItem.dataContext.children)
+    return;
 
-    let className = "lbl";
-    if(dataContext.children)
-      className += " parent";
-    else
-      className += " child";
+  label.set("html", getLabelHTML(
+    label.parent.dataItem.dataContext, 
+    label.parent.dataItem.uid
+  ));
 
-    return '<div class="' + className + '" style="background:url(' + getRandomImage(dataContext) + ') no-repeat center"></div>';
-
-  });
-
-  //label.set("html", '<div class="labelContent" style="background:url(\'{image}\') no-repeat center"></div>');
   label.set("width", am5.percent(100));
   label.set("height", am5.percent(100));
 });
 
+
+
 // set the default active item (select root to be active to show its children)
 series.set("selectedDataItem", series.dataItems[0]);
 
+
 // breadcrumbs
-container.children.moveValue(
+const breadCrumbs = container.children.unshift(
   am5hierarchy.BreadcrumbBar.new(root, {
-    series: series,
-    isMeasured:  true,
-  }), 0
+    series: series
+  })
 );
 
-// display toolTip without mouseover
-//series.nodes.getIndex(1).showTooltip();
 
 // Make stuff animate on load
 series.appear(1000, 300);
+
+
+//series.events.on("dataitemselected", e => {
+//  
+//  const node        = e.target;
+//  const dataContext = e.dataItem.dataContext;
+//
+//  if(dataContext.name == rootName) {
+//    document.querySelectorAll(".lbl").forEach(elm => {
+//      elm.classList.remove("hidden");
+//    });
+//    return;
+//  }
+//
+//  document.querySelectorAll(".lbl").forEach(elm => {
+//    elm.classList.add("hidden");
+//  });
+//
+//  if(dataContext.children) {
+//    e.dataItem.get("children").forEach(child => {
+//      document.getElementById('lbl_' + child.uid).classList.remove('hidden');
+//    });
+//  }
+//  
+//});

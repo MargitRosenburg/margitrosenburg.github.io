@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Modern sans-serif font */
 }
 
 .container {
@@ -22,7 +22,7 @@ html, body {
     align-items: center;
     text-decoration: none;
     color: white;
-    padding: 20px; /* Padding added to the half divs */
+    padding: 50px; /* Padding added to the half divs */
     text-align: center; /* Center text horizontally */
     word-wrap: break-word; /* Ensure long words break */
 }
