@@ -19,7 +19,6 @@ const items = [
     categories:      ["Kommunikation"],
     type:            "Wissenschaftliche Kommunikation",
     name:            "Wissenschaftsplakat & Studie",
-    description:     "",
     image:           "img/WissPlakat.png",
     backgroundColor: am5.Color.fromString("#c1d0ce")
   },
@@ -27,7 +26,6 @@ const items = [
     categories:  ["Webentwicklung"],
     type:        "UI-Design",
     name:        "Prototyping für Web-App",
-    description: "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich durchgeführt ... anschaulich präsentiert ... toll!",
     image:       "img/UIDesign.png",
     backgroundColor: am5.Color.fromString("#f7f7f7")
   },
@@ -35,7 +33,6 @@ const items = [
     categories:  ["Visualisierung", "Webentwicklung"],
     type:        "Datenvisualisierung",
     name:        "Javascript Charts und Animationen",
-    description: "Kern dieser Arbeit ... mit dem Ziel ... erfolgreich ... anschaulich ... usw",
     image:       "img/Datenvis.png",
     backgroundColor: am5.Color.fromString("#5a407a")
   },
@@ -43,7 +40,6 @@ const items = [
     categories:  ["Visualisierung"],
     type:        "Illustration",
     name:        "2D/3D Interieur",
-    description: "Kern dieser Arbeit ... ",
     image:       "img/Illustration.png",
     backgroundColor: am5.Color.fromString("#92ad90")
   },
@@ -51,7 +47,6 @@ const items = [
     categories:  ["Kommunikation", "Webentwicklung", "Print"],
     type:        "Technische Kommunikation",
     name:        "Spracharme Kurzanleitung Print & Web-App",
-    description: "...",
     image:       "img/ExoAnleitung.png",
     backgroundColor: am5.Color.fromString("#729ba6")
   },
@@ -59,7 +54,6 @@ const items = [
     categories:  ["Kommunikation", "Print"],
     type:        "Technische Kommunikation",
     name:        "Techniklexikon: Layout & Visualisierung",
-    description: "...",
     image:       "img/TechnikLexikon.png",
     backgroundColor: am5.Color.fromString("#fce0a2")
   },
@@ -67,7 +61,6 @@ const items = [
     categories:  ["Visualisierung"],
     type:        "Typografie",
     name:        "Binnenräume & Specimen Poster",
-    description: "...",
     image:       "img/Typografie.png",
     backgroundColor: am5.Color.fromString("#e9605d")
   },
@@ -75,7 +68,6 @@ const items = [
     categories:  ["Print"],
     type:        "Logo-Design",
     name:        "Monogramm & Visitenkarten",
-    description: "...",
     image:       "img/LogoDesign.png",
     backgroundColor: am5.Color.fromString("#e8e8e8")
   },
@@ -83,7 +75,6 @@ const items = [
     categories:  ["Kommunikation", "Webentwicklung"],
     type:        "Social Media ",
     name:        "Podcast-Produktion & Webauftritt",
-    description: "...",
     image:       "img/SocialMedia.png",
     backgroundColor: am5.Color.fromString("#70a6b2")
   },
