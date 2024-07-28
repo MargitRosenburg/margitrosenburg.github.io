@@ -1,0 +1,45 @@
+{
+    "nodeName": "knits",
+    "children": [
+        {
+            "nodeName": "body",
+            "children": [
+                {
+                    "nodeName": "jumpers",
+                    "image": "img/jumpers.jpg",
+                    "value": 5
+                },
+                {
+                    "nodeName": "cardigans",
+                    "image": "img/cardigans.jpg",
+                    "value": 6
+                }
+            ]    
+        },
+        {
+            "nodeName": "accessories",
+            "children": [
+                {
+                    "nodeName": "hats",
+                    "image": "img/hat",
+                    "value": 8
+                },
+                {
+                    "nodeName": "shawls",
+                    "image": "img/corvid",
+                    "value": 8
+                },
+                {
+                    "nodeName": "hands",
+                    "image": "img/hands",
+                    "value": 4
+                }
+                {
+                    "nodeName": "socks",
+                    "image": "img/socks",
+                    "value": 12
+                }
+            ]
+        }
+    ]        
+}
